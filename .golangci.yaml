@@ -1,0 +1,15 @@
+linters-settings:
+  staticcheck:
+    # SAxxxx checks in https://staticcheck.io/docs/configuration/options/#checks
+    # Default: ["*"]
+    checks: ["*"]
+
+linters:
+  disable-all: true
+  enable:
+    - errcheck
+    - gofmt
+    - golint
+    - govet
+    - staticcheck
+    - whitespace
