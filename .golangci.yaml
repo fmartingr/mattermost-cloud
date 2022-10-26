@@ -1,8 +1,11 @@
 linters-settings:
   staticcheck:
     # SAxxxx checks in https://staticcheck.io/docs/configuration/options/#checks
-    # Default: ["*"]
     checks: ["*"]
+
+issues:
+  # Allows basic comments errors from `golint` to show up.
+  exclude-use-default: false
 
 linters:
   disable-all: true
